@@ -2,11 +2,11 @@
 
 
 def containsDuplicate(nums: list[int]) -> bool:
-    hashset = set()
+    hashSet = set()
     for n in nums:
-        if n in hashset:
+        if n in hashSet:
             return True
-        hashset.add(n)
+        hashSet.add(n)
     return False
 
 
