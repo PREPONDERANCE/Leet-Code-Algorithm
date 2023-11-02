@@ -34,3 +34,14 @@ def findMedianSortedArrays(nums1, nums2):
 numList1 = [1, 3]
 numList2 = [2]
 print(findMedianSortedArrays(numList1, numList2))
+
+
+# A cheating method
+
+import statistics
+
+def cheatCode(nums1, nums2):
+	res = nums1 + nums2
+	return statistics.mean(res)
+
+print(cheatCode(numList1, numList2))
