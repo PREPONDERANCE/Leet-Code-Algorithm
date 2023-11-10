@@ -12,7 +12,7 @@ class LRUCache:
 		self.cache = {}
 		
 		self.left, self.right = Node(0, 0), Node(0, 0)
-		self.left.next, self.right.prev = self.left, self.right
+		self.left.next, self.right.prev = self.right, self.left
 		
 	def insert(self, node):
 		node.next = self.right
@@ -48,3 +48,4 @@ obj = LRUCache(2)
 obj.put(1, 1)
 obj.put(2, 2)
 print(obj.get(1))
+obj.put(3, 3)
